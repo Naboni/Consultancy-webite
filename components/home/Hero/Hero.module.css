@@ -1,0 +1,69 @@
+/* 
+hero
+---- 
+*/
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.heroBlock {
+  background: url("../../../public/images/yoni-crush.jpg") no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroBlock .containerFluid {
+  display: block !important;
+}
+
+.heroBlock .content {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1040px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 70px;
+}
+
+.heroBlock h3 {
+  font-size: 73.6px;
+  font-weight: 700;
+  color: #ffb449;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+
+.heroBlock p {
+  font-size: 32px;
+  color: #ffb449;
+  margin: 0 0 30px;
+}
+
+.btnHolder .button1 {
+  background-color: #db993b;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+.btnHolder .button2 {
+  background-color: #54682b;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
+  margin: 0 10px 0 0;
+}

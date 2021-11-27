@@ -1,0 +1,36 @@
+.block {
+  background-color: #353535;
+  padding: 60px 0;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #db993b;
+}
+
+.cardIcon {
+  color: #bbbbbb;
+  font-size: 80px;
+}
+
+.cardTitle {
+  color: white;
+  font-size: 20px;
+}
+
+.content {
+  text-align: center;
+}

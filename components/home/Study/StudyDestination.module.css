@@ -1,0 +1,54 @@
+.bgColor {
+  background: url("../../../public/images/curves.jpg") no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  height: 50vh;
+}
+
+.block {
+  padding: 60px 0;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.serviceBlock .contentHolder {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.serviceBlock .icon {
+  font-size: 40px;
+  color: #1890ff;
+  margin: 0 0 10px;
+}
+
+.serviceBlock .content {
+  text-align: center;
+}
+
+.metaTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #db993b;
+}
+
+.serviceCard {
+  background-color: #fafafa;
+}

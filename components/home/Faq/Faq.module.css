@@ -1,0 +1,49 @@
+.bgColor {
+  background-color: white;
+}
+
+.block {
+  padding: 60px 0;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #54682b;
+}
+
+.faqBlock .quickSupport {
+  padding: 50px 0;
+}
+
+.quickSupport .button1 {
+  background-color: #ffb449;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.panelTitle {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.panelContent {
+  font-size: 18px;
+  font-weight: normal;
+}

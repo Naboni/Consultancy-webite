@@ -1,0 +1,49 @@
+.bgColor {
+  background-color: white;
+}
+
+.block {
+  padding: 60px 0;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #db993b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImg {
+  border-radius: 50%;
+}
+
+.cardContent {
+  font-size: 16px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.cardName {
+  font-size: 32px;
+  font-weight: 700;
+  color: #54682b;
+}

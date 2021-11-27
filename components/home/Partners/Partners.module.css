@@ -1,0 +1,32 @@
+.block {
+  background-color: #fafafa;
+  padding: 60px 0;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.titleHolder h5 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.cardIcon {
+  font-size: 80px;
+}
+
+.content {
+  text-align: center;
+}

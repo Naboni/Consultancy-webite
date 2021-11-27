@@ -1,0 +1,62 @@
+.bgColor {
+  background: url("../../../public/images/curves.jpg") no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  height: 35vh;
+}
+
+.aboutCard {
+  height: 35vh;
+}
+
+.containerFluid {
+  margin: 0 auto;
+  /* max-width: 1200px; */
+  padding: 0 15px;
+}
+
+.titleHolder {
+  text-align: center;
+  position: relative;
+  padding: 0 0 40px;
+}
+
+.titleHolder h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title1 {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+.title2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.joinButton {
+  background-color: #fafafa;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
