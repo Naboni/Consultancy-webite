@@ -1,30 +1,17 @@
 .bgColor {
-  background: url("../../../public/images/curves.jpg") no-repeat;
+  background: url("https://cdn.wallpapersafari.com/4/70/YoWdgA.jpg") no-repeat;
   background-position: 100% 50%;
   background-size: cover;
-  height: 35vh;
+  min-height: 35vh;
 }
 
 .aboutCard {
-  height: 35vh;
+  min-height: 35vh;
 }
 
 .containerFluid {
   margin: 0 auto;
-  /* max-width: 1200px; */
   padding: 0 15px;
-}
-
-.titleHolder {
-  text-align: center;
-  position: relative;
-  padding: 0 0 40px;
-}
-
-.titleHolder h2 {
-  font-size: 48px;
-  font-weight: 700;
-  color: white;
 }
 
 .leftSide {
@@ -32,7 +19,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid white;
 }
 .rightSide {
   display: flex;
@@ -59,4 +45,47 @@
   font-size: 18px;
   font-weight: 600;
   color: black;
+}
+
+@media (max-width: 1025px) {
+  .title1 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .title2 {
+    font-size: 25px;
+  }
+  .joinButton {
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .title2 {
+    font-size: 20px;
+  }
+  .joinButton {
+    font-size: 14px;
+  }
+  .containerFluid {
+    padding: 15px 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .title1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .title2 {
+    font-size: 16px;
+  }
+  .joinButton {
+    font-size: 12px;
+  }
 }

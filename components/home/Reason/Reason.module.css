@@ -1,5 +1,7 @@
 .block {
-  background-color: #353535;
+  background: url("../../../public/svg/map.svg") no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
   padding: 60px 0;
 }
 
@@ -18,7 +20,7 @@
 .titleHolder h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #db993b;
+  color: var(--black-accent);
 }
 
 .cardIcon {
@@ -27,10 +29,28 @@
 }
 
 .cardTitle {
-  color: white;
+  color: var(--main-accent-bg);
   font-size: 20px;
 }
 
 .content {
   text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .cardIcon {
+    color: #bbbbbb;
+    font-size: 50px;
+  }
 }

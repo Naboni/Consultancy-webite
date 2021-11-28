@@ -1,91 +1,76 @@
-import Link from 'next/link'
-import Image from 'next/image';
-import { useRouter } from 'next/router'
-import { useState } from 'react';
-import { Button } from 'antd';
+import { useState, useEffect } from "react";
 
-import styles from './Navbar.module.css'
+import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
-import logo from '@/public/images/logo.png'
+import { FiMenu } from "react-icons/fi";
+import { Button } from "antd";
+import styles from "./Navbar.module.css";
 
+import logo from "@/public/logo.png";
+
+const items = ["Home", "Destinations", "Services", "About", "Contact"];
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const openMenu = () => setIsOpen(!isOpen);
-    const router = useRouter()
-    const handleClick = () => {
-        router.push("https://next-ts-fe.vercel.app/auth/signup")
-    }
-    return (
-        <div>
-            <nav className={styles.navbar}>
-                <Link href='/'>
-                    <a className={styles.navlogo}>
-                        <Image alt="logo" src={logo} width="180" height="60" />
-                    </a>
-                </Link>
-                <ul className={isOpen === false ?
-                    styles.navmenu : styles.navmenu + ' ' + styles.active}>
-                    <li className={styles.navitem}>
-                        <Link href='/'>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Home</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Programs</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>About Us</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Services</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Work With Us</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Apply Now</a>
-                        </Link>
-                    </li>
-                    <li className={styles.navitem}>
-                        <Link href=''>
-                            <a className={isOpen === false ?
-                                styles.navlink : styles.navlink + ' ' + styles.active}
-                                onClick={openMenu}>Contact Us</a>
-                        </Link>
-                    </li>
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.scrollY > 25) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  }, []);
 
-                    {/* <button className={styles.navbarButton} onClick={handleClick}>GET STARTED</button> */}
-                </ul>
-                <button className={isOpen === false ?
-                    styles.hamburger : styles.hamburger + ' ' + styles.active}
+  const [isOpen, setIsOpen] = useState(false);
+  const openMenu = () => setIsOpen(!isOpen);
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("https://next-ts-fe.vercel.app/auth/signup");
+  };
+  return (
+    <div>
+      <nav className={`${styles.navbar} ${scrolled ? styles.addBg : ""}`}>
+        <Link href="/">
+          <a className={styles.navlogo}>
+            <Image alt="logo" src={logo} width="60" height="60" />
+          </a>
+        </Link>
+        <ul
+          className={
+            !isOpen ? styles.navmenu : styles.navmenu + " " + styles.active
+          }
+        >
+          {items.map((e, i) => {
+            return (
+              <li className={styles.navitem} key={i}>
+                <Link href="/">
+                  <a
+                    className={
+                      !isOpen
+                        ? styles.navlink
+                        : styles.navlink + " " + styles.active
+                    }
                     onClick={openMenu}
-                >
-                    <span className={styles.bar}></span>
-                    <span className={styles.bar}></span>
-                    <span className={styles.bar}></span>
-                </button>
-            </nav>
-        </div>
-    )
+                  >
+                    {e}
+                  </a>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <Button
+          icon={<FiMenu />}
+          className={
+            isOpen === false
+              ? styles.hamburger
+              : styles.hamburger + " " + styles.active
+          }
+          onClick={openMenu}
+        ></Button>
+      </nav>
+    </div>
+  );
 }

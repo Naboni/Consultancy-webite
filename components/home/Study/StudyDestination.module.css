@@ -1,8 +1,19 @@
 .bgColor {
-  background: url("../../../public/images/curves.jpg") no-repeat;
+  background: url("https://cdn.wallpapersafari.com/4/70/YoWdgA.jpg") no-repeat;
   background-position: 100% 50%;
   background-size: cover;
   height: 50vh;
+}
+
+.wrapper {
+  padding-right: 20px;
+}
+
+.wrapper img {
+  object-fit: cover;
+}
+.wrapper h3 {
+  color: white;
 }
 
 .block {
@@ -42,13 +53,20 @@
   text-align: center;
 }
 
-.metaTitle {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: #db993b;
-}
-
 .serviceCard {
   background-color: #fafafa;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
 }

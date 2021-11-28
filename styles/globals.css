@@ -29,3 +29,8 @@ body {
   right: 0;
   z-index: 999;
 }
+
+:root {
+  --main-accent-bg: #6d79ff;
+  --black-accent: rgb(87, 87, 87);
+}

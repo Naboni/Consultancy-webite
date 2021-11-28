@@ -21,7 +21,7 @@
 .titleHolder h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #54682b;
+  color: var(--black-accent);
 }
 
 .faqBlock .quickSupport {
@@ -29,7 +29,7 @@
 }
 
 .quickSupport .button1 {
-  background-color: #ffb449;
+  background-color: var(--main-accent-bg);
   border-radius: 5px;
   height: 50px;
   font-size: 18px;
@@ -46,4 +46,24 @@
 .panelContent {
   font-size: 18px;
   font-weight: normal;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .cardIcon {
+    font-size: 0px;
+  }
+  .cardIcon img {
+    height: 50px !important;
+  }
 }

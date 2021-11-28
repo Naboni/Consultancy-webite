@@ -1,15 +1,18 @@
-import '../styles/globals.css'
-import 'antd/dist/antd.css';
+import "../styles/globals.css";
+import "antd/dist/antd.css";
 
-import type { AppProps } from 'next/app'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import type { AppProps } from "next/app";
 import Head from "next/head";
 //antd
-import { Layout } from 'antd';
+import { Layout } from "antd";
 const { Header, Content, Footer } = Layout;
 
 // components
-import Navbar from '@/components/common/Navbar/Navbar';
-import AppFooter from '@/components/common/Footer/Footer'
+import Navbar from "@/components/common/Navbar/Navbar";
+import AppFooter from "@/components/common/Footer/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,9 +24,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           as="font"
           crossOrigin=""
         />
-        <title>Line Addis</title>
+        <title>Sky Keys Consultancy</title>
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
       </Head>
-      <Header>
+      <Header style={{ backgroundColor: "transparent", padding: 0 }}>
         <Navbar />
       </Header>
       <Content>
@@ -33,8 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <AppFooter />
       </Footer>
     </Layout>
-  )
-  // <Component {...pageProps} />
+  );
 }
 
-export default MyApp
+export default MyApp;

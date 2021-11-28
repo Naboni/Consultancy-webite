@@ -17,10 +17,12 @@
 .titleHolder h2 {
   font-size: 48px;
   font-weight: 700;
+  color: var(--black-accent);
 }
 .titleHolder h5 {
   font-size: 32px;
   font-weight: 500;
+  color: var(--main-accent-bg);
 }
 
 .cardIcon {
@@ -29,4 +31,24 @@
 
 .content {
   text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .cardIcon {
+    font-size: 0px;
+  }
+  .cardIcon img{
+    height: 50px !important;
+  }
 }

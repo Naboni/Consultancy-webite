@@ -9,7 +9,7 @@ hero
 }
 
 .heroBlock {
-  background: url("../../../public/images/yoni-crush.jpg") no-repeat;
+  background: url("../../../public/svg/map.svg") no-repeat;
   background-position: 50% 100%;
   background-size: cover;
   height: 100vh;
@@ -32,19 +32,37 @@ hero
 .heroBlock h3 {
   font-size: 73.6px;
   font-weight: 700;
-  color: #ffb449;
+  color: var(--black-accent);
   line-height: 1.2;
   margin: 0 0 30px;
 }
 
+.heroBlock h3 span {
+  color: var(--main-accent-bg);
+}
+
 .heroBlock p {
   font-size: 32px;
-  color: #ffb449;
+  color: var(--main-accent-bg);
   margin: 0 0 30px;
 }
 
 .btnHolder .button1 {
-  background-color: #db993b;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-accent-bg);
+  border: none;
+}
+
+.btnHolder .button1:hover {
+  background-color: #dad7eb;
+}
+
+.btnHolder .button2 {
+  background-color: var(--main-accent-bg);
   border-radius: 5px;
   height: 50px;
   font-size: 18px;
@@ -53,17 +71,65 @@ hero
   border: none;
 }
 
-.btnHolder .button2 {
-  background-color: #54682b;
-  border-radius: 5px;
-  height: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
-  border: none;
+.btnHolder .button2:hover {
+  background-color: #6f5bdf;
 }
 
 .heroBlock .btnHolder button,
 .heroBlock .btnHolder .fas {
   margin: 0 10px 0 0;
+}
+
+@media (max-width: 1025px) {
+  .heroBlock h3 {
+    font-size: 50px;
+  }
+  .containerFluid {
+    padding: 0 10%;
+  }
+  .heroBlock {
+    height: 70vh;
+  }
+  .heroBlock .content {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroBlock h3 {
+    font-size: 30px;
+  }
+  .heroBlock p {
+    font-size: 20px;
+  }
+  .containerFluid {
+    padding: 0 10%;
+  }
+  .heroBlock {
+    height: 70vh;
+  }
+  .heroBlock .content {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 350px) {
+  .btnHolder {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .btnHolder .button1 {
+    width: 100%;
+  }
+  .btnHolder .button2 {
+    width: 100%;
+  }
+  .heroBlock {
+    height: 70vh;
+  }
+  .heroBlock .content {
+    height: 80vh;
+  }
 }

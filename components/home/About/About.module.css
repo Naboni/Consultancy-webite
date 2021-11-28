@@ -9,10 +9,10 @@ hero
 }
 
 .heroBlock {
-  background: url("../../../public/images/whobg.jpg") no-repeat;
+  background: url("https://cdn.wallpapersafari.com/4/70/YoWdgA.jpg") no-repeat;
   background-position: 50% 100%;
   background-size: cover;
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .heroBlock .containerFluid {
@@ -20,7 +20,7 @@ hero
 }
 
 .aboutCard {
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .heroBlock .content {
@@ -28,7 +28,7 @@ hero
   max-width: 940px;
   display: flex;
   flex-direction: column;
-  height: 55vh;
+  min-height: 55vh;
   padding: 10px 40px;
   justify-content: space-around;
   background-color: white;
@@ -38,7 +38,7 @@ hero
 .heroBlock h3 {
   font-size: 48px;
   font-weight: 700;
-  color: #db993b;
+  color: var(--black-accent);
   line-height: 1.2;
   margin: 0 0 30px;
 }
@@ -53,10 +53,36 @@ hero
 }
 
 .btnHolder .button1 {
-  background-color: #db993b;
+  background-color: var(--main-accent-bg);
   border-radius: 5px;
   height: 50px;
   font-size: 18px;
   font-weight: 600;
   color: white;
+}
+
+@media (max-width: 1025px) {
+  .heroBlock h3 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBlock p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .heroBlock h3 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .heroBlock {
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .heroBlock h3 {
+    font-size: 25px;
+  }
 }

@@ -21,7 +21,7 @@
 .titleHolder h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #db993b;
+  color: var(--black-accent);
 }
 
 .content {
@@ -32,18 +32,38 @@
   justify-content: center;
 }
 
-.cardImg {
-  border-radius: 50%;
-}
-
 .cardContent {
   font-size: 16px;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 .cardName {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 700;
-  color: #54682b;
+  color: var(--main-accent-bg);
+  margin: 0;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .cardName {
+    font-size: 20px;
+    margin: 0;
+  }
+  .cardContent {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+  }
 }

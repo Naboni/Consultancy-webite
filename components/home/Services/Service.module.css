@@ -21,7 +21,7 @@
 .titleHolder h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #db993b;
+  color: var(--black-accent);
 }
 
 .serviceBlock .contentHolder {
@@ -43,9 +43,26 @@
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  color: #db993b;
+  color: var(--main-accent-bg);
 }
 
 .serviceCard {
   background-color: #fafafa;
+}
+
+@media (max-width: 1025px) {
+  .titleHolder h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+  .metaTitle {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .titleHolder h2 {
+    font-size: 25px;
+    margin: 0;
+  }
 }
